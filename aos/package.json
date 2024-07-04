@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@permaweb/aos": "https://get_ao.g8way.io"
+  },
+  "overrides": {
+    "@permaweb/aoconnect": "^0.0.56"
   }
 }
