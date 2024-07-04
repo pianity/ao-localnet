@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # TODO: need to find this module id programatically with a query to Arlocal
-AOS_MODULE=SBNb1qPQ1TDwpD_mboxm2YllmMLXpWw4U8P9Ff8W9vk
+AOS_MODULE=GYrbbe0VbHim_7Hi6zrOpHQXrSQz07XNtwCnfbFo2I0
 echo "!!!"
 echo "!!!"
 echo "!!!"

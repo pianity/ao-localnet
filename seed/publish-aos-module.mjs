@@ -13,15 +13,15 @@ const tx = await arweave.createTransaction({
   data: await readFile('extras/aos.wasm'),
 })
 
-tx.addTag('Memory-Limit',    '500-mb'                   )
-tx.addTag('Compute-Limit',   '9000000000000'            )
-tx.addTag('Data-Protocol',   'ao'                       )
-tx.addTag('Type',            'Module'                   )
-tx.addTag('Module-Format',   'wasm32-unknown-emscripten')
-tx.addTag('Input-Encoding',  'JSON-1'                   )
-tx.addTag('Output-Encoding', 'JSON-1'                   )
-tx.addTag('Variant',         'ao.LN.1'                  )
-tx.addTag('Content-Type',    'application/wasm'         )
+tx.addTag('Memory-Limit',    '1000-mb'                    )
+tx.addTag('Compute-Limit',   '9000000000000'              )
+tx.addTag('Data-Protocol',   'ao'                         )
+tx.addTag('Type',            'Module'                     )
+tx.addTag('Module-Format',   'wasm32-unknown-emscripten2' )
+tx.addTag('Input-Encoding',  'JSON-1'                     )
+tx.addTag('Output-Encoding', 'JSON-1'                     )
+tx.addTag('Variant',         'ao.LN.1'                    )
+tx.addTag('Content-Type',    'application/wasm'           )
 
 await arweave.transactions.sign(tx, wallet)
 
